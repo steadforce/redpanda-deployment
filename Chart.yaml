@@ -1,0 +1,8 @@
+apiVersion: v2
+appVersion: &appVersion 0.4.9
+name: redpanda
+version: 0.0.0
+dependencies:
+- name: operator
+  version: *appVersion
+  repository: https://charts.redpanda.com

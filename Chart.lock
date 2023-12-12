@@ -1,0 +1,6 @@
+dependencies:
+- name: operator
+  repository: https://charts.redpanda.com
+  version: 0.4.9
+digest: sha256:3331058ffa2003c781a6932df037c01849fafe2efeddf5f923235c3135bb8def
+generated: "2023-12-12T14:08:11.535375+01:00"
