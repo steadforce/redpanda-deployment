@@ -1,0 +1,5 @@
+redpanda:
+  clusterSpec:
+    statefulset:
+      podAntiAffinity:
+        requiredDuringSchedulingIgnoredDuringExecution: null
