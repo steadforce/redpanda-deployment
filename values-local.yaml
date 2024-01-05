@@ -2,4 +2,5 @@ redpanda:
   clusterSpec:
     statefulset:
       podAntiAffinity:
-        requiredDuringSchedulingIgnoredDuringExecution: null
+        type: soft
+        
