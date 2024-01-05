@@ -5,6 +5,9 @@ metadata:
   name: redpanda
 spec:
   chartRef: {}
+  {{- if ((.Values.redpanda).podAntiAffinity) }}
+  podAntiAffinity: {{ .Values.redpanda.podAntiAffinity | toYaml | nindent 4 }}
+  {{- end }}
   clusterSpec:
     external:
       domain: customredpandadomain.local
@@ -12,7 +15,4 @@ spec:
       initContainers:
         setDataDirOwnership:
           enabled: true
-      {{- if ((((.Values.redpanda).clusterSpec).statefulset).podAntiAffinity) }}
-      podAntiAffinity: {{ .Values.redpanda.clusterSpec.statefulset.podAntiAffinity | toYaml | nindent 8 }}
-      {{- end }}
 {{- end }}  
