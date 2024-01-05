@@ -2,5 +2,4 @@ redpanda:
   clusterSpec:
     statefulset:
       podAntiAffinity:
-        type: soft
-        
+        type: "soft"
