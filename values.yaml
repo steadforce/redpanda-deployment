@@ -4,4 +4,10 @@ global:
   istio:
     ingressGateway:
       namespace: istio-ingress
+
+redpanda:
+  statefulset:
+    initContainers:
+      setDataDirOwnership:
+        enabled: true
   

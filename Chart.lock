@@ -1,6 +1,6 @@
 dependencies:
-- name: operator
+- name: redpanda
   repository: https://charts.redpanda.com
-  version: 0.4.9
-digest: sha256:3331058ffa2003c781a6932df037c01849fafe2efeddf5f923235c3135bb8def
-generated: "2023-12-12T14:08:11.535375+01:00"
+  version: 5.6.62
+digest: sha256:e3d7986b29d3d085056c2884f2032607c3b5e194c3de1ebc1e4e65300f6f0a30
+generated: "2024-01-08T14:23:59.2280105+01:00"

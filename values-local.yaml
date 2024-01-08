@@ -1,3 +1,4 @@
 redpanda:
-  podAntiAffinity:
-    type: soft
+  statefulset:
+    podAntiAffinity:
+      type: soft
