@@ -1,3 +1,4 @@
 redpanda:
   statefulset:
-    replicas: 1
+    podAntiAffinity:
+      type: soft

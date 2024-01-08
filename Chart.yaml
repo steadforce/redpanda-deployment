@@ -5,4 +5,4 @@ version: 0.0.0
 dependencies:
 - name: redpanda
   version: *appVersion
-  repository: https://charts.redpanda.com
+  repository: "file:://charts/redpanda"
