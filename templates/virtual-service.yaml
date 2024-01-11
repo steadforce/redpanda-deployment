@@ -11,7 +11,11 @@ spec:
   hosts:
   - {{ .Values.subDomain }}.{{ .Values.global.acme.domain }}
   http:
-  - route:
+  - headers:
+      response:
+        set:
+          strict-transport-security: max-age=15724800
+    route:
     - destination:
         host: {{ .Values.subDomain }}
         port:
