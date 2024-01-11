@@ -10,5 +10,7 @@ redpanda:
     initContainers:
       setDataDirOwnership:
         enabled: true
+  post_install_job:
+    enabled: false
 
 subDomain: redpanda-console
