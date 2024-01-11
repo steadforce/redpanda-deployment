@@ -12,5 +12,7 @@ redpanda:
         enabled: true
   post_install_job:
     enabled: false
+  post_upgrade_job:
+    enabled: false
 
 subDomain: redpanda-console
